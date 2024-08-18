@@ -3,7 +3,7 @@ import pandas as pd
 import torch 
 from sentence_transformers import SentenceTransformer, util 
 "# Load dataset" 
-df = pd.read_csv('//content//wiki_movie_plots_deduped (1).csv') 
+df = pd.read_csv('wiki_movie_plots_deduped.csv') 
 "# Take a subset of the dataset from rows 31,495 to 28,897 (in reverse order)" 
 subset_df = df.iloc[31495:28896:-1] 
 "# Initialize the model" 
