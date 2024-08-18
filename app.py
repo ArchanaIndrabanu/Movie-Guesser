@@ -80,8 +80,7 @@ else:
 # Footer
 st.divider()
 st.markdown("""
-    <p class="small-font">
-    **App Developed by [Your Name]**  
+    <p class="small-font">  
     _Powered by Streamlit and Sentence Transformers_
     </p>
     """, unsafe_allow_html=True)
