@@ -40,8 +40,9 @@ df = pd.read_csv('wiki_movie_plots_deduped.csv')
 # Take a subset of the dataset from rows 31,495 to 28,897 (in reverse order)
 subset_df = df.iloc[28897:31495]  # Selecting rows in ascending order
 
-# Initialize the model
-model = SentenceTransformer('sentence-transformers/paraphrase-MiniLM-L6-v2')
+# Initialize the model from the local directory
+model_path = 'paraphrase-MiniLM-L6-v2'  # Path to the model in the repository
+model = SentenceTransformer(model_path)
 
 # Encode the movie plots
 plots = subset_df['Plot'].tolist()
